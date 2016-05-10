@@ -1,0 +1,12 @@
+Note following points to deploy project properly
+
+1. Package is properly tested for java 8. So i would prefer you to have java 8 installed for easy deployment. (though it will work in java 7 too without recompilation)
+
+3. Target Environment:
+	Container:  Apache Tomcat version 8 (if you have tomcat 7, you may require to compile source code again using java 7 environment.)
+	Configuration: No tomcat related configuration required.
+	Deployment directory: deploy package folder as it is inside "webapps". (you may have another directory instead of "webapps" depending on your tomcat settings. )
+
+4. Database Requirement:
+	Important! : no external database is required as I am using portable database "SQlite" which is already inside deployable package. No any other database related configuration is required.
+
